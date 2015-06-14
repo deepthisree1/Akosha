@@ -20,8 +20,6 @@ Excluded Nouns in this process. Filtered Adjectives, verbs and adverbs separatel
 
 # Prediction of Next two words:
 
-# Approach:
-
 Bigram approach.
 
 Identifying the bigrams, which are present in the document or converting two consecutive words in to bigrams and finding the word that is more probable give the previous word based on the frequency.
