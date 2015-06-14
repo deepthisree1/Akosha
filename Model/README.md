@@ -1,10 +1,9 @@
 # Code Waltkhrough
 
 # Step 1: Run the file Main_Model.py
-        
-   -->It wiill create two serialized objects :
-        --> Modeldump_Bigram.pkl & Data_Model.pkl
-                         
+    --> It wiill create two serialized objects
+    --> Modeldump_Bigram.pkl & Data_Model.pkl
+            
 # Step 2: Now Run the file Run_Test.py :
    --> INPUT : The text you want to check
         --> OUTPUT : The predicted two words OR the sentence(if the input is whole sentence).
