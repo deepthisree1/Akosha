@@ -42,13 +42,16 @@ input :"I thought American Sniper didn't come out"
  output:  “of the”
 
 Actual : "Bradley Cooper is Chris Kyle in #American Sniper"
+
 Input :"Bradley Cooper is Chris"                                       
 output: "kyle author"
 
 Actual : "Watch Bradley Cooper in the new trailer for Clint Eastwood's"
+
 Input :"Watch Bradley Cooper in the new trailer for Clint "                                                
 output : "eastwoods bythebook"
 
 Actual :4.AmericanSniper broke box office records this weekend
+
 Input : “AmericanSniper broke box" 
 output : "office american"
