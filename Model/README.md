@@ -1,21 +1,16 @@
 # Code Waltkhrough
 
---> Run the file Main_Model.py
-        |
-        |
-        --> It wiill create two serialized objects :
-                         |
-                         |
-                         --> Modeldump_Bigram.pkl & Data_Model.pkl
+# Step 1: Run the file Main_Model.py
+        
+   -->It wiill create two serialized objects :
+        --> Modeldump_Bigram.pkl & Data_Model.pkl
                          
-                         
---> Now Run the file Run_Test.py :
-              |
-              |
-              --> INPUT : The text you want to check
-              --> OUTPUT : The predicted two words OR the sentence(if the input is whole sentence).
+# Step 2: Now Run the file Run_Test.py :
+   --> INPUT : The text you want to check
+        --> OUTPUT : The predicted two words OR the sentence(if the input is whole sentence).
+        
 # Requirements :
-   Python 2.7 & above
+   --> Python 2.7 & above
 #Python Packages Required:
     --> string
     --> sklearn
