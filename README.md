@@ -35,7 +35,7 @@ Bi gram approach is less effective. Tri gram or n gram where n >3 is more effect
 As the whole corpus is talking about one singular subject We can filter NNP ‘s and identify what are the most common adjectives, verbs and adverbs that’s likely to occur given NNP’S based on the conditional probabilities.Tokenizing the data and applying POS tagging on each of the token. Considering each line and their tags as the basis of training to predict the next possible tag that is most likely to occur and filling the word of corresponding tag (predicted) which has got highest occurrence with the respective NNP present in the test data.
 
 
-# output
+# Output
 Output to some of the test data :
 
 1.I thought American Sniper didn't come out                                                                   
