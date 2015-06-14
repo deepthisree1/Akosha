@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: Deepthi Sree Vamaraju
+@author: 'deepthi'
 """
 import string 
 import re
@@ -10,7 +10,7 @@ from nltk.corpus import wordnet as wn
 from sklearn.externals import joblib
 
 def read_data():
-    with open("C:\\Users\\HP\\Downloads\\as.txt", 'r') as fileinput:
+    with open("/Users/deepthi/Downloads/as.txt", 'r') as fileinput:
         lines= [filter(lambda x: x in string.printable, (re.sub(r"(?:\@|https?\://)\S+", "", line)).lower().translate(None, string.punctuation)) for line in fileinput]
     print lines[0]
     tokenize = [word_tokenize(text)  for text in lines]
