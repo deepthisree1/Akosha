@@ -8,7 +8,7 @@ The data set consists of 1,00,000 unprocessed real tweets which needs to cleaned
 
 1 Removed Urls present in the data, exclusion of non-Unicode characters, converting emoticons in to standard tokens using regular expressions.
 
-# What more can be done here?? 
+# What more can be done here ?
 
 Stemming: Stemming is very much needed to group the words which are similar but in various forms. But the output results of the stemmer are very weak. This in turn involves the process of correcting the spellings of this corpus based on the creating a customized dictionary relevant to the corpus. This involves huge process that checks and corrects each token in document by learning words in dictionary.
 
