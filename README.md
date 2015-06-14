@@ -54,4 +54,4 @@ output : "eastwoods bythebook"
 Actual :4.AmericanSniper broke box office records this weekend
 
 Input : “AmericanSniper broke box" 
-output : "office american"
+  output : "office american"
