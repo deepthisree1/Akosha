@@ -17,7 +17,7 @@ def read_data():
     tokenize = [word_tokenize(text)  for text in lines]
     return lines,tokenize
     
-# finding the similar data
+# finding the similar data(incomplete)
 def similar(data):
     for tokens in data:
         verb = [toks[0] for toks in nltk.pos_tag(tokens) if toks[1] in ['VB','JJ']]
