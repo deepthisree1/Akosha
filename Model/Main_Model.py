@@ -6,7 +6,6 @@ import string
 import re
 import nltk
 from nltk.tokenize import word_tokenize 
-from nltk.corpus import wordnet as wn
 from sklearn.externals import joblib
 
 def read_data():
@@ -20,13 +19,7 @@ def read_data():
 def similar(data):
     for tokens in data:
         verb = [toks[0] for toks in nltk.pos_tag(tokens) if toks[1] in ['VB','JJ']]
-    print verb[6]
-    for s in wn.synsets('cat'):
-        lemmas = s.lemmas()
-        print lemmas
-        for l in lemmas:
-            if l.name() == 'dog':
-                print l.synset()
+    print verb
     
 def create_model(data):
     unigrams=[]
