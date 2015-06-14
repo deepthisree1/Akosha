@@ -38,17 +38,17 @@ As the whole corpus is talking about one singular subject We can filter NNP ‘s
 # Output
 Output to some of the test data :
 
-1.I thought American Sniper didn't come out                                                                   
+#1.I thought American Sniper didn't come out                                                                   
  output:  “of the”
 
-2,Bradley Cooper is Chris Kyle in #American Sniper
+#2,Bradley Cooper is Chris Kyle in #American Sniper
 Bradley Cooper is Chris                                         
 output: kyle author
 
-3.Watch Bradley Cooper in the new trailer for Clint Eastwood's
+#3.Watch Bradley Cooper in the new trailer for Clint Eastwood's
 "Watch Bradley Cooper in the new trailer for Clint "                                                
 output : eastwoods bythebook
 
-4.AmericanSniper broke box office records this weekend
+#4.AmericanSniper broke box office records this weekend
 “AmericanSniper broke box    
 output : office american
