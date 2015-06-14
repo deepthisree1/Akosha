@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jun 14 17:03:29 2015
-@author: HP
+@author: 'deepthi'
 """
 from sklearn.externals import joblib
 import string
