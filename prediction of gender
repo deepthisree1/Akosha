@@ -1,0 +1,72 @@
+import pandas as pd
+import collections as Counter
+import numpy as np
+import sklearn
+from sklearn.externals import joblib
+
+
+def read_data():
+    data = pd.read_csv("/Users/deepthi/Desktop/name gender.csv")
+    data["Name"] = [x.lower() for x in data["Name"]]
+    return data
+
+
+
+def names_firstletervowel():
+    data1 = read_data()
+    vowel = 'a', 'e', 'i', 'o', 'u'
+    for words in data1["Name"]:
+        if words.startswith(vowel):
+            data1["firstletervowel"]=1
+        else:
+            data1["firstletervowel"]=0
+        return data1["firstletervowel"]
+        print data1["firstletervowel"]
+
+def names_lastletervowel():
+    data1 = read_data()
+    vowel = 'a', 'e', 'i', 'o', 'u'
+    for words in data1["Name"]:
+        if words.endswith(vowel):
+            data1["lastletervowel"]=1
+        else:
+            data1["lastletervowel"]=0
+        return data1["lastletervowel"]
+        #print data1["lastletervowel"]
+
+def lengthname():
+    data1 = read_data()
+    data1["length"] = [len(word) for word in data1["Name"]]
+    return data1["length"]
+    #print data1["length"]
+
+
+def noofvowandcons():
+    vowel = 'a', 'e', 'i', 'o', 'u'
+    data1 = read_data()
+    countervow = []
+    countercons = []
+    for word in data1["Name"]:
+        vowels = (len(filter(lambda x:x in vowel,word)))
+        cons = len(word) - vowels
+        countervow.append(vowels)
+        countercons.append(cons)
+    data1["vow"] = countervow
+    data1["cons"] =  countercons
+    return data1["vow"],data1["cons"]
+
+def data_function():
+    data1 = read_data()
+    data1["firstlettervow"] = names_firstletervowel()
+    data1["lastlettervow"] = names_lastletervowel()
+    data1["lengthname"] = lengthname()
+    data1["no of vow"],data1["no of cons"] = noofvowandcons()
+    #return data1,data1["Gendername"]
+    #return data1
+    joblib.dump(data1,"Data_Model.pkl")
+
+
+if __name__ == "__main__":
+    data_function()
+
+
